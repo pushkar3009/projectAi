@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": ".",        // ✅ required to make `@` work
+    "paths": {
+      "@/*": ["./*"]
+    }
+  }
+}
