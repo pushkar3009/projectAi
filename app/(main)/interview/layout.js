@@ -1,0 +1,14 @@
+import React, { Suspense } from 'react'
+// need one library npm i react-spinners
+import {BarLoader} from "react-spinners";
+const Layout = ({children}) => {
+  return (
+    <div className="px-5">
+        
+        
+        <Suspense fallback={<BarLoader className="mt-4" width={"100%"} color="gray"  />}>{children}</Suspense>
+    </div>
+  )
+}
+
+export default Layout;
